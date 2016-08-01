@@ -1,0 +1,22 @@
+<!-- Forecast Page -->
+<h5 class="forecast-spacer">{{ days }} Day Forecast for <strong>{{ city }}</strong></h5>
+<hr>
+<h6>Gimme the <a class="day-forecast-number" href="#/forecast/2" ng-class="{ 'active': days === '2' }">Two </a> 
+              <a class="day-forecast-number" href="#/forecast/5" ng-class="{ 'active': days === '5' }"> Five </a> 
+              <a class="day-forecast-number" href="#/forecast/7" ng-class="{ 'active': days === '7' }"> Seven </a>  
+              <a class="day-forecast-number" href="#/forecast/10" ng-class="{ 'active': days === '10' }"> Ten </a> 
+              <a class="day-forecast-number" href="#/forecast/14" ng-class="{ 'active': days === '14' }"> Fourteen </a>
+              day forecast</h6>
+<hr>
+<div ng-repeat="dayWeather in weatherResult.list">
+    <div class="row">
+        <div class="column">
+            <weather-report weather-day="dayWeather" convert-to-standard="convertToFahrenheit(temp)" convert-the-date="convertDate(theDate)" date-format="EEEE, MMMM, dd, yyyy" check-sweaty=""></weather-report>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <h4><a href="#/" class="button button-outline">But is it Sweaty in Another City?</a></h4>
+    </div>
+</div>

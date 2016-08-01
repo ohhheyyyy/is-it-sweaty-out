@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="isItSweatyOutApp">
+
+<head>
+    <title>Is It Sweaty Out?</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- Milligram CSS minified -->
+    <link rel="stylesheet" href="./milligram/dist/milligram.min.css">
+    <!-- Other CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- fontawesome -->
+    <script src="https://use.fontawesome.com/d7cdf218c4.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular-resource.min.js"></script>
+<!--     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/html2canvas.js"></script>
+    <script type="text/javascript" src="./js/jquery.plugin.html2canvas.js"></script> -->
+    <script src="app.js"></script>
+    <script src="./routes/routes.js"></script>
+    <script src="./services/services.js"></script>
+    <script src="./controllers/controllers.js"></script>
+    <script src="./directives/directives.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-default">
+            <div class="container">
+                <div class="row little-off-top">
+                    <div class="navbar-header column column-80" ">
+                        <h3><a href="/isitsweatyout ">Is It Sweaty Out?</a></h3>
+                    </div>
+                    <ul class="menu-items column column-20 "">
+                        <li><a href="/isitsweatyout"><i class="fa fa-home"></i> Home</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+    <footer>&copy;2016 • Ashley Hartt</footer>
+</body>
+
+</html>

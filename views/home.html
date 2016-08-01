@@ -1,0 +1,32 @@
+<!-- Home Page -->
+<div class="row">
+    <div class="column column-50 column-offset-25">
+        <h4 class="centered-text top-spacer">Is it sweaty in:</h4>
+        <form ng-submit="submit('sweatyCity')" ng-controller="homeController">
+            <fieldset>
+                <div class="form-group">
+                    <input type="text" class="form-control centered-text" name="sweatyCity" ng-model="city" />
+                </div>
+                <input type="submit" class="button-primary centered-button" value="Get Ya Forecast">
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div class="little-off-top"></div>
+<div class="row">
+    <div class="column centered-text">
+        <h5>Text your [potentially] sweaty city's name to <strong><a href="sms://+16465531916">646.553.1916</a></strong><br> 
+        for a weather report delivered right to your [potentially] sweaty palms</h5>
+    </div>
+</div>
+<div class="little-off-top"></div>
+<div class="row">
+    <div class="column centered-text">
+        <p>• For today's weather, format your text as follows: </p>
+        <h6><i class="fa fa-quote-left" aria-hidden="true"></i>  New York City  <i class="fa fa-quote-right" aria-hidden="true"></i></h6>
+    </div>
+    <div class="column centered-text">
+        <p>• For a five-day forecast, format your text as follows: </p>
+        <h6><i class="fa fa-quote-left" aria-hidden="true"></i>  New York City forecast  <i class="fa fa-quote-right" aria-hidden="true"></i></h6>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+header {
+  background-color: #999999;
+  width: 100%;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 2%;
+  text-align: center;
+}
+
+.navbar,
+.no-list {
+  list-style: none;
+}
+
+.panel-body > ul {
+  list-style: none;
+}
+
+.day-forecast-number:after {
+  content: ' \f0e7';
+  font-family: FontAwesome;
+  font-size: 0.5em;
+  vertical-align: middle;
+}
+
+.active {
+  color: #54FF9F;
+}
+
+.form-control {
+  font-size: 1.0rem;
+}
+
+a:hover,
+h3 > a:hover,
+.button.button-outline:hover {
+  text-decoration: none;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.centered-button {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.top-spacer {
+  margin-top: 15%;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  list-style: none;
+}
+
+.menu-items {
+  list-style: none;
+  margin-top: 1.3%;
+}
+
+.forecast-spacer {
+  margin-top: 2%;
+}
+
+hr {
+  margin: 0 0 1%;
+}
+
+.panel-title {
+  font-size: 3rem;
+}
+
+.little-off-top {
+  margin-top: 1%;
+}

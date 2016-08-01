@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">{{ convertTheDate({theDate: weatherDay.dt}) | date: dateFormat }}</h4>
+    </div>
+    <div class="panel-body">
+        <h3>It's a {{ weatherDay.weather[0].description }} kinda day.</h3>
+        <div class="container">
+            <div class="row">
+                <div class="column column-50">
+                    <ul class="no-list">
+                        <li><i class="fa fa-coffee" aria-hidden="true"></i> Morning temperature: {{ convertToStandard({temp: weatherDay.temp.morn}) }}&deg; F</li>
+                        <li><i class="fa fa-sun-o" aria-hidden="true"></i> Daytime temperature: {{ convertToStandard({temp: weatherDay.temp.day}) }}&deg; F</li>
+                        <li><i class="fa fa-cutlery" aria-hidden="true"></i> Evening temperature: {{ convertToStandard({temp: weatherDay.temp.eve}) }}&deg; F</li>
+                        <li><i class="fa fa-moon-o" aria-hidden="true"></i> Night temperature: {{ convertToStandard({temp: weatherDay.temp.night}) }}&deg; F</li>
+                    </ul>
+                </div>
+                <div class="column column-50">
+                    <ul class="no-list">
+                        <li><i class="fa fa-arrow-down" aria-hidden="true"></i> Minimum temperature: {{ convertToStandard({temp: weatherDay.temp.min}) }}&deg; F</li>
+                        <li><i class="fa fa-arrow-up" aria-hidden="true"></i> Maximum temperature: {{ convertToStandard({temp: weatherDay.temp.max}) }}&deg; F</li>
+                        <li><i class="fa fa-life-ring" aria-hidden="true"></i> Today's Humidity: {{ weatherDay.humidity }}%</li>
+                        <li><i class="fa fa-cloud" aria-hidden="true"></i> Cloud Cover: {{ weatherDay.clouds }}%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                    <div class="column">
+                        <h5>But is it sweaty out? <strong>{{ (weatherDay.humidity > 50 && convertToStandard({temp: weatherDay.temp.max}) > 70 ? "fo sho." : "nah.") }}</strong></h5>
+                    </div>
+                </div>
+    </div>
+</div>
