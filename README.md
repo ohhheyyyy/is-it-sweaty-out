@@ -25,7 +25,7 @@
 * Message the Is It Sweaty Out? app number from a verified number to get a weather report / forecast delivered to your phone
 
 
-####I deas for future features:
+#### Ideas for future features:
 
 * Map the user's city search to Open Weather Map's city list ids
 
